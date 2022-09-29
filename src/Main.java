@@ -14,8 +14,6 @@ public class Main {
         System.out.println("ФИО сотрудника — " + firstName +" "+ middleName +" "+ lastName); //1
         System.out.println();
         System.out.println("ФИО сотрудника — " + fullName); //2
-
-
     }
     private static void taskTwo () {
         System.out.println("Задание 2");
@@ -31,10 +29,7 @@ public class Main {
         boolean notAcceptedCharacters = fullName.contains("ё"); // Проверка есть ли буква "ё"
         System.out.println(notAcceptedCharacters);
         System.out.println();
-        String[] fullNameSplit = fullName.split("\\s+");// разделение строки с помощью метода split()
-        for (String finishedFullName : fullNameSplit) {
-            String changeName = finishedFullName.replace('ё', 'е'); // Замена буквы "ё" на букву "е"
-            System.out.println(changeName);
-        }
+        String changeName = fullName.replace('ё', 'е'); // Замена буквы "ё" на букву "е"
+        System.out.println("Данные ФИО сотрудника — " + changeName);
     }
 }
