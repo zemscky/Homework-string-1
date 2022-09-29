@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         taskOne ();
+        taskTwo ();
     }
-    public static void taskOne () {
+    private static void taskOne () {
         System.out.println("Задание 1");
 
         String firstName = "Ivanov";
@@ -14,5 +15,11 @@ public class Main {
         System.out.println("ФИО сотрудника — " + fullName); //2
 
 
+    }
+    private static void taskTwo () {
+        System.out.println("Задание 2");
+        String fullName = "Ivanov Ivan Ivanovich";
+        String upperСaseName = fullName.toUpperCase();
+        System.out.println(upperСaseName);
     }
 }
